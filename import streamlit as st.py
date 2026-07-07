@@ -7,7 +7,7 @@ st.set_page_config(page_title="Presente especial", page_icon="🎁")
 
 # Título e texto enganadores
 st.title("Mensagem Especial da beta! 🎉")
-st.write("Temos uma surpresa preparada especialmente para ti para celebrar o teu excelente trabalho recente e por não transformares a Agência numa mercearia.")
+st.write("Tenho uma surpresa preparada especialmente para ti para celebrar o teu excelente trabalho recente e por não transformares a Agência numa mercearia.")
 
 # Espaçamento para criar suspense
 st.write("Uma fofoca fresca!!!")
@@ -27,7 +27,7 @@ if st.button("Clica aqui para abrires a tua surpresa", type="primary"):
         c1, c2, c3 = st.columns([1, 2, 1]) 
         with c2:
             # st.image agora usa container_width=False e um tamanho fixo (width=300)
-            st.image(imagem, caption="Com muito carinho! 😂", width=300)
+            st.image(imagem, caption="Com muito carinho", width=300)
     except FileNotFoundError:
         st.error("Erro: Não te esqueças de guardar a foto na mesma pasta com o nome 'surpresa.jpg'!")
         
