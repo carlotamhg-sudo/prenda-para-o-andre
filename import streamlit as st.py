@@ -24,7 +24,10 @@ if st.button("Clica aqui para abrires a tua surpresa", type="primary"):
     
     try:
         imagem = Image.open('WhatsApp Image 2026-07-07 at 19.22.53.jpeg')
-        st.image(imagem, caption="Com muito carinho! 😂", width=300)
+        c1, c2, c3 = st.columns([1, 2, 1]) 
+        with c2:
+            # st.image agora usa container_width=False e um tamanho fixo (width=300)
+            st.image(imagem, caption="Com muito carinho! 😂", width=300)
     except FileNotFoundError:
         st.error("Erro: Não te esqueças de guardar a foto na mesma pasta com o nome 'surpresa.jpg'!")
         
