@@ -10,7 +10,7 @@ st.title("Mensagem Especial da beta! 🎉")
 st.write("Temos uma surpresa preparada especialmente para ti para celebrar o teu excelente trabalho recente e por não transformares a Agência numa mercearia.")
 
 # Espaçamento para criar suspense
-st.write("Fofoca fresca")
+st.write("Uma fofoca fresca!!!")
 
 # O botão do "Click bait"
 if st.button("Clica aqui para abrires a tua surpresa", type="primary"):
