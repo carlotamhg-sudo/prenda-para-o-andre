@@ -1,0 +1,31 @@
+import streamlit as st
+from PIL import Image
+import time
+
+# Configuração da página para parecer profissional na aba do browser
+st.set_page_config(page_title="Presente especial", page_icon="🎁")
+
+# Título e texto enganadores
+st.title("Mensagem Especial da beta! 🎉")
+st.write("Temos uma surpresa preparada especialmente para ti para celebrar o teu excelente trabalho recente e por não transformares a Agência numa mercearia.")
+
+# Espaçamento para criar suspense
+st.write("Fofoca fresca")
+
+# O botão do "Click bait"
+if st.button("Clica aqui para abrires a tua surpresa", type="primary"):
+    
+    # Um pequeno loading falso para aumentar a ansiedade
+    with st.spinner('A carregar a tua surpresa...'):
+        time.sleep(2)
+    
+    # A revelação brutal
+    st.success("Surpresa carregada com sucesso!")
+    
+    try:
+        imagem = Image.open('WhatsApp Image 2026-07-07 at 19.22.53.jpeg')
+        st.image(imagem, caption="Com muito carinho! 😂", use_column_width=True)
+    except FileNotFoundError:
+        st.error("Erro: Não te esqueças de guardar a foto na mesma pasta com o nome 'surpresa.jpg'!")
+        
+    st.balloons() # Balões para adicionar ao sarcasmo
